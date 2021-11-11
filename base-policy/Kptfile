@@ -3,7 +3,7 @@ kind: Kptfile
 metadata:
   name: base-policy
   annotations:
-    blueprints.cloud.google.com/title: "Base policies"
+    blueprints.cloud.google.com/title: "Base policy"
     cft.dev/base-version: "1"
 info:
   description: Base policy for deriving other policy packages with
