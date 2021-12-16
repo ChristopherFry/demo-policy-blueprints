@@ -4,24 +4,25 @@ metadata:
   name: cis-k8s-v1-5-1
   annotations:
     blueprints.cloud.google.com/title: 'CIS Benchmark Kubernetes v1.5.1'
-    cft.dev/package-version: '1'
+    cft.dev/package-version: '2'
     cft.dev/base-version: '1'
 upstream:
   type: git
   git:
-    repo: https://github.com/platkrm/demo-policy-blueprints
+    repo: 'https://github.com/platkrm/demo-policy-blueprints'
     directory: /base-policy
     ref: main
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
-    repo: https://github.com/platkrm/demo-policy-blueprints
+    repo: 'https://github.com/platkrm/demo-policy-blueprints'
     directory: /base-policy
     ref: main
     commit: 98cd80e0857b8b5f3c09eb057508f68dc8ddd469
 info:
-  description: These constraints are intended to address the recommendations the CIS Kubernetes Benchmark v.1.5.1. They have not been certified by CIS.
+  description: >-
+    These constraints are intended to address the recommendations the CIS Kubernetes Benchmark v.1.5.1. They have not been certified by CIS.
 pipeline:
-  mutators:
-  validators:
+  mutators: null
+  validators: null
